@@ -1,7 +1,11 @@
+import { Routes, Route } from 'react-router-dom';
+import React from 'react';
+import Greeting from './features/Greeting';
+
 const App = () => (
-  <div className="App">
-    <h1>Hello World</h1>
-  </div>
+  <Routes>
+    <Route path="/" element={<Greeting />} />
+  </Routes>
 );
 
 export default App;
